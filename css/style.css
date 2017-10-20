@@ -13,7 +13,7 @@
 
 body {
   overflow-x: hidden;  /*this fixes the issue with bootstraps row right margin property overflowing 100% page width */
-  background-color: #FFF8E0;
+  background-color: #F0F0E0;
   font-size: 1.1em;
 }
 
@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .greyt {
   background-color: #f2f2f2;
+}
+
+.pad25 {
+  padding: 25px!important;
 }
 
 .marbot15 {
