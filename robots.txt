@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /_private/
 Disallow: /tmp/
 Disallow: /oud 2016-9-22/
-Sitemap: http://www.yourdomain.com/sitemap.xml
+Sitemap: http://www.reiniercaron.nl/sitemap.xml

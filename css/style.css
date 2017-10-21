@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Glass+Antiqua|Suez+One|Oxygen');
+/*@import url('https://fonts.googleapis.com/css?family=Glass+Antiqua|Suez+One|Oxygen');
 
 .font-1 {
   font-family: 'Suez One', serif;
@@ -9,11 +9,46 @@
 }
 .font-3{
   font-family: 'Oxygen', sans-serif;
+}*/
+/*@import url('https://fonts.googleapis.com/css?family=Anton|Pacifico|Roboto+Slab');
+
+.font-1 {
+  font-family: 'Pacifico', cursive;
 }
+.font-2{
+  font-family: 'Anton', sans-serif;
+}
+.font-3{
+  font-family: 'Roboto Slab', serif;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Permanent+Marker|Russo+One');
+
+.font-1 {
+  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Russo One', sans-serif;*/
+  font-weight: 500!important;
+}
+.font-2{
+  /*font-family: 'Permanent Marker', cursive;*/
+}
+.font-3{
+  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Russo One', sans-serif;*/
+  font-weight: 700!important;
+}
+
+
+
+
+
+
+
+
 
 body {
   overflow-x: hidden;  /*this fixes the issue with bootstraps row right margin property overflowing 100% page width */
-  background-color: #F0F0E0;
+  background-color: #eceeef;
   font-size: 1.1em;
 }
 
@@ -22,6 +57,11 @@ hr {
   height: 3px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+/*a {
+  font-family: 'Roboto Slab', serif!important;
+  font-weight: 400;
+}*/
 
 a:link {
   color:#440055;
@@ -38,22 +78,23 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-size: 1.5em!important;
   margin: 0.8em 0.8em 0.8em 0.8em;
-  color: #660080!important;
+  color: #660080;
 }
 
 @media (min-width: 768px) {
   h1, h2, h3, h4, h5, h6 {
-  font-size: 1.6em!important;
-  margin: 1.1em 1.1em 1.1em 1.1em;
-  color: #660080!important;
+  font-size: 2.3em!important;
+  margin: 0.9em 0.9em 0.9em 0.9em;
+  color: #660080;
   }
 }
 
 @media (min-width: 992px) {
   h1, h2, h3, h4, h5, h6 {
-  font-size: 1.6em!important;
-  margin: 1.6em 1.6em 1.6em 1.6em;
-  color: #660080!important;
+  font-size: 3em!important;
+  /*font-weight: bold;*/
+  margin: 1em 1em 1em 1em;
+  color: #660080;
  }
 }
 
@@ -66,8 +107,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f2f2f2;
 }
 
+.grey {
+  background-color: #eceeef;
+}
+
 .pad25 {
-  padding: 25px!important;
+  padding-left: 25px!important;
+  padding-right: 25px;
 }
 
 .marbot15 {
@@ -317,7 +363,7 @@ h2.anchor {
   margin-top: 15px;
 }
 
-#mugshot {
+#pill {
   min-width: 150px;
   max-width: 200px;
   margin-top: 4vh;
