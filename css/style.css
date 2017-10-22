@@ -243,7 +243,7 @@ h2.anchor {
 }
 @media (max-width: 576px) {
     #hero-text .col-12 {
-        padding-top: 7vh!important;
+        padding-top: 6vh!important;
     }
 }
 @media (min-width: 577px) {
