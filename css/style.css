@@ -1,61 +1,25 @@
-
-/*@import url('https://fonts.googleapis.com/css?family=Glass+Antiqua|Suez+One|Oxygen');
-
-.font-1 {
-  font-family: 'Suez One', serif;
-}
-.font-2{
-  font-family: 'Glass Antiqua', cursive;
-}
-.font-3{
-  font-family: 'Oxygen', sans-serif;
-}*/
-/*@import url('https://fonts.googleapis.com/css?family=Anton|Pacifico|Roboto+Slab');
-
-.font-1 {
-  font-family: 'Pacifico', cursive;
-}
-.font-2{
-  font-family: 'Anton', sans-serif;
-}
-.font-3{
-  font-family: 'Roboto Slab', serif;
-}*/
-
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Permanent+Marker|Russo+One');
-
 .font-1 {
-  font-family: 'Roboto Slab', serif;
-  /*font-family: 'Russo One', sans-serif;*/
-  font-weight: 500!important;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500!important;
 }
-.font-2{
-  /*font-family: 'Permanent Marker', cursive;*/
+/*.font-2 {
+    font-family: 'Permanent Marker', cursive;
+}*/
+.font-3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700!important;
 }
-.font-3{
-  font-family: 'Roboto Slab', serif;
-  /*font-family: 'Russo One', sans-serif;*/
-  font-weight: 700!important;
-}
-
-
-
-
-
-
-
-
-
 body {
-  overflow-x: hidden;  /*this fixes the issue with bootstraps row right margin property overflowing 100% page width */
-  background-color: #eceeef;
-  font-size: 1.1em;
+    overflow-x: hidden;
+    /*this fixes the issue with bootstraps row right margin property overflowing 100% page width */
+    background-color: #eceeef;
+    font-size: 1.1em;
 }
-
 hr {
-  border : 0;
-  height: 3px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 /*a {
@@ -64,419 +28,374 @@ hr {
 }*/
 
 a:link {
-  color:#440055;
+    color: #440055;
 }
-
 a:visited {
-  color:#8200ac;
+    color: #8200ac;
 }
-
 a:hover {
-  color:#8200ac;
+    color: #8200ac;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1.5em!important;
-  margin: 0.8em 0.8em 0.8em 0.8em;
-  color: #660080;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.5em!important;
+    margin: 0.8em 0.8em 0.8em 0.8em;
+    color: #660080;
 }
-
 @media (min-width: 768px) {
-  h1, h2, h3, h4, h5, h6 {
-  font-size: 2.3em!important;
-  margin: 0.9em 0.9em 0.9em 0.9em;
-  color: #660080;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 2.3em!important;
+        margin: 0.9em 0.9em 0.9em 0.9em;
+        color: #660080;
+    }
 }
-
 @media (min-width: 992px) {
-  h1, h2, h3, h4, h5, h6 {
-  font-size: 3em!important;
-  /*font-weight: bold;*/
-  margin: 1em 1em 1em 1em;
-  color: #660080;
- }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 3em!important;
+        margin: 1em 1em 1em 1em;
+        color: #660080;
+    }
 }
 
 /* TO BE SORTED */
 .whitebg {
-  background-color: #fff;
+    background-color: #fff;
 }
-
 .greyt {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
-
 .grey {
-  background-color: #eceeef;
+    background-color: #eceeef;
 }
-
 .pad25 {
-  padding-left: 25px!important;
-  padding-right: 25px;
+    padding-left: 25px!important;
+    padding-right: 25px;
 }
-
 .marbot15 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
-
 .vertmid {
-  vertical-align: middle!important;
+    vertical-align: middle!important;
 }
-
 .oxblood {
-  color: #76323F;
+    color: #76323F;
 }
 /* END to be sorted */
 
-
 /* ---===###  BANNER  ###===--- */
 .logofull {
-  width: 100%;
-  box-shadow: 0px 9px 5px -5px #888888;
+    width: 100%;
+    box-shadow: 0px 9px 5px -5px #888888;
 }
-
 .imgfull {
-  width: 100%;
-  box-shadow: 0px 19px 15px -5px #888888;
+    width: 100%;
+    box-shadow: 0px 19px 15px -5px #888888;
 }
-
 /*Use  noPadding in the container-fluid around the banner */
+
 .noPadding {
-  padding: 0 !important;
+    padding: 0 !important;
 }
-
 @media (min-width: 601px) {
-  #sm-logo {
-    display: none;
-  }
-
-  h2.anchor {
-    padding-top: 65px;
-    margin-top: -65px;
-  }
-
-  .xlhide {
-    display: none;
-  }
+    #sm-logo {
+        display: none;
+    }
+    h2.anchor {
+        padding-top: 65px;
+        margin-top: -65px;
+    }
+    .xlhide {
+        display: none;
+    }
 }
-
 /*  switch between small & large banner images  */
+
 @media (max-width: 600px) {
-  #xl-logo {
-    display: none;
-  }
-
-  #sm-logo {
-    padding: 6px 17px 0px 17px;
-    background-color: #292B2C;
-  }
-
-  h2.anchor {
-    padding-top: 225px;
-    margin-top: -225px;
-  }
+    #xl-logo {
+        display: none;
+    }
+    #sm-logo {
+        padding: 6px 17px 0px 17px;
+        background-color: #292B2C;
+    }
+    h2.anchor {
+        padding-top: 225px;
+        margin-top: -225px;
+    }
 }
 /* END BANNER */
 
-
 /* ---===###  NAVIGATION  ###===--- */
 .navbar {
-  box-shadow: 1px 7px 8px -5px
+    box-shadow: 1px 7px 8px -5px
 }
-
 /*makes the navbar lineup to toggle menu*/
+
 .navbar-header {
-  margin-bottom: 1px;
+    margin-bottom: 1px;
 }
-
 .navbar-toggler {
-  margin-top: 0.1em;
-  padding-top: 0em;
-  padding-bottom: 0.1em;
-  padding-left: 0.1em;
-  padding-right: 0.1em;
+    margin-top: 0.1em;
+    padding-top: 0em;
+    padding-bottom: 0.1em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
 }
-
 .navbar-toggler-icon {
-  height: 1.2em;
-  width: 1.2em;
+    height: 1.2em;
+    width: 1.2em;
 }
 #navbar-nav {
-  margin-left: 2em;
-  margin-right: 1em;
+    margin-left: 2em;
+    margin-right: 1em;
 }
-
 /*.anchor is used on links within the page so they allign under fixed-top navbar*/
+
 h2.anchor {
-  padding-top: 60px;
-  margin-top: -60px;
+    padding-top: 60px;
+    margin-top: -60px;
 }
-
 /*Keeps the nav toggle from overlapping on small screens*/
+
 @media (max-width: 576px) {
-  nav .container {
-    width: 100%;
-  }
+    nav .container {
+        width: 100%;
+    }
 }
-
 /* Nav stick to top after scroll */
+
 .sticky.is-sticky {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
-
 /* main-nav social button styles */
-@media (min-width: 600px) {
-  ul.social-button-nav li a i {
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    font-size: 28px;
-    text-align: center;
-    margin: 0px 6px 0px 6px;
-    padding-top: 0.2em;
-  padding-right: 0.01em;
-    transition: all 0.3s ease-in-out;
-  }
-}
 
+@media (min-width: 600px) {
+    ul.social-button-nav li a i {
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 28px;
+        text-align: center;
+        margin: 0px 6px 0px 6px;
+        padding-top: 0.2em;
+        padding-right: 0.01em;
+        transition: all 0.3s ease-in-out;
+    }
+}
 @media (max-width: 599px) {
-  ul.social-button-nav li a i {
-    color: #fff;
-    width: 24px;
-    height: 24px;
-    border-radius: 30px;
-    font-size: 16px;
-    text-align: center;
-    margin: 0px 0px 0px 12px;
-    padding-top: 0.25em;
-  padding-right: 0.03em;
-    transition: all 0.3s ease-in-out;
-  }
+    ul.social-button-nav li a i {
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        border-radius: 30px;
+        font-size: 16px;
+        text-align: center;
+        margin: 0px 0px 0px 12px;
+        padding-top: 0.25em;
+        padding-right: 0.03em;
+        transition: all 0.3s ease-in-out;
+    }
 }
 /* END NAVIGATION */
 
-
 /* ---===###  HERO SECTION  ###===--- */
 .Absolute-Center {
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
-
 #hero {
-  background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1507560043/reiniercaron-nl/backgroundhero.svg);
-  background-size: cover;
-  position: relative;
-  height: 100vh;
+    background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1507560043/reiniercaron-nl/backgroundhero.svg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
 }
-
 #hero-text {
-  font-size: 4vw;
-	margin-top: 4vw;
+    font-size: 4vw;
+    margin-top: 4vw;
 }
-
 #candy a {
-  color: #FFFAF0!important;
-  text-decoration: none!important;
+    color: #FFFAF0!important;
+    text-decoration: none!important;
 }
-
 @media (max-width: 576px) {
-  #hero-text .col-12 {
-  padding-top: 7vh!important;
-  }
+    #hero-text .col-12 {
+        padding-top: 7vh!important;
+    }
 }
-
 @media (min-width: 577px) {
-  #hero-text .col-12 {
-  padding-top: 2vh!important;
-  }
+    #hero-text .col-12 {
+        padding-top: 2vh!important;
+    }
 }
-
-@media all and (max-width: 575px) {
-  .glyphicon {
-    font-size: 3em!important;
+.glyphicon {
+    font-size: 15vw!important;
 }
-  .scale {
-    font-size: 1em!important;
-  }
+.scale {
+    padding-top: 0.5vh!important;
+    font-size: 4vw!important;
 }
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .glyphicon {
-    font-size: 2.1em!important;
-}
-  .scale {
-    font-size: 1em!important;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 991px) {
-  .glyphicon {
-    font-size: 4em!important;
+    #hero-text {
+        font-size: 3vw;
+        margin-top: 3vw;
+    }
 }
-  .scale {
-    font-size: 1.4em!important;
-  }
-  #hero-text {
-    font-size: 3vw;
-    margin-top: 3vw;
-  }
-}
-
 @media (min-width: 992px) and (max-width: 1199px) {
-  .glyphicon {
-    font-size: 5em!important;
+    #hero-text {
+        font-size: 2vw;
+        margin-top: 2.5vw;
+    }
 }
-  .scale {
-    font-size: 1.5em!important;
-  }
-  #hero-text {
-    font-size: 2vw;
-    margin-top: 2.5vw;
-  }
-}
-
 @media all and (min-width: 1200px) {
-  .glyphicon {
-    font-size: 6em!important;
-}
-  .scale {
-    font-size: 1.6em!important;
-  }
-  #hero-text {
-    font-size: 2vw;
-  	margin-top: 2.5vw;
-  }
+    #hero-text {
+        font-size: 2vw;
+        margin-top: 2.5vw;
+    }
 }
 /*  END HERO SECTION */
 
-
 /* ---===###  ABOUT (Wie?) SECTION  ###===--- */
 #aboutme {
-  margin-top: 15px;
+    margin-top: 15px;
 }
-
 #pill {
-  min-width: 150px;
-  max-width: 200px;
-  margin-top: 4vh;
-  box-shadow: 0px 9px 11px -5px;
-  margin-bottom: 0.5em;
+    min-width: 50px;
+    max-width: 33vw;
+    margin-top: 4vh;
+    box-shadow: 0px 9px 11px -5px;
+    margin-bottom: 0.5em;
 }
 /* END ABOUT (Wie?) SECTION */
 
-
 /* ---===###  PORTFOLIO SECTION  ###===--- */
 img {
-    image-rendering: optimizeSpeed;             /*                     */
-    image-rendering: -moz-crisp-edges;          /* Firefox             */
-    image-rendering: -o-crisp-edges;            /* Opera               */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed       */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+    image-rendering: optimizeSpeed;
+    /*                     */
+
+    image-rendering: -moz-crisp-edges;
+    /* Firefox             */
+
+    image-rendering: -o-crisp-edges;
+    /* Opera               */
+
+    image-rendering: -webkit-optimize-contrast;
+    /* Chrome (and Safari) */
+
+    image-rendering: optimize-contrast;
+    /* CSS3 Proposed       */
+
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE8+                */
+
     filter: none;
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
     -ms-filter: blur(0px);
-     filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-     }
-
+    filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
 /* make the "X" close-button larger */
+
 .close {
- font-size: 2.5rem;
- margin-top: 3px;
- margin-right: 7px;
+    font-size: 2.5rem;
+    margin-top: 3px;
+    margin-right: 7px;
 }
-
-.modulportfolio p, a {
-  font-family: 'Oxygen', sans-serif;
+.modulportfolio p,
+a {
+    font-family: 'Oxygen', sans-serif;
 }
-
 .modul-footer {
-  padding-left: 1rem;
+    padding-left: 1rem;
 }
-
 /* Weer API styling*/
-.hide {
-  display: none;
-}
 
+.hide {
+    display: none;
+}
 #weer-api {
-  border-radius: 25px;
-  border: 4px solid #fff;
-  padding: 15px;
-  background-color: DodgerBlue;
+    border-radius: 25px;
+    border: 4px solid #fff;
+    padding: 15px;
+    background-color: DodgerBlue;
 }
 /* END PORTFOLIO SECTION */
 
-
 /* ---===###  CONTACT SECTION  ###===--- */
 #gotocontact {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
-
 #email1 {
-  display: none;
-}
-
-/* hide "message send check" at small screen width */
-@media (max-width: 400px) {
-#check {
     display: none;
-  }
 }
+/* hide "message send check" at small screen width */
 
+@media (max-width: 400px) {
+    #check {
+        display: none;
+    }
+}
 @media (min-width: 768px) {
-  .contactpadding {
-    padding-top: 28px;
-  }
+    .contactpadding {
+        padding-top: 28px;
+    }
 }
-
 .hidden {
-  display: none;
+    display: none;
 }
 /*  END CONTACT SECTION */
 
-
 /* ---===###  FOOTER (Page) SECTION  ###===--- */
 .main-footer {
-  background-color: #440055;
+    background-color: #440055;
 }
 /* END FOOTER (Page) SECTION */
 
-
 /* ---===###  BOOTSTRAP "SUCCES BUTTON" COLOR ALTERATION  ###===--- */
 .btn-succes {
-  border-color: #440055;
-  background-color: #ffffff;
-  color: #000;
+    border-color: #440055;
+    background-color: #ffffff;
+    color: #000;
 }
-
 .btn-succes:hover {
-  border-color: #440055;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 7px 1px #440055;
-  color: #000;
+    border-color: #440055;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 7px 1px #440055;
+    color: #000;
 }
 /* END SUCCES BUTTON ALTERATION */
 
-
 /* ---===###  ALL THAT BOX SHADOW  ###===--- */
 .boxshadow {
-  position: relative;
-  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-  padding: 10px;
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
 }
-
 /*  Make the image fit the box */
 /*.boxshadow img {
   width: 100%;
@@ -485,81 +404,71 @@ img {
 }*/
 
 .boxshadow::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  /* hide shadow behind image */
-  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-  height: 100px;
-  bottom: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* hide shadow behind image */
+
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    height: 100px;
+    bottom: 0;
 }
 /*  END ALL THAT BOX SHADOW */
 
+
 /* ---===###  SOCIAL ICONS (Color alterations)  ###===--- */
 ul.social-button li a i {
-  color: #fff;
-  width: 24px;
-  height: 24px;
-  border-radius: 30px;
-  font-size: 16px;
-  text-align: center;
-  margin: 0px 6px 0px 0px;
-  padding-top: 0.25em;
-  padding-right: 0.03em;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 7px;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 6px 0px 0px;
+    padding-top: 0.25em;
+    padding-right: 0.03em;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 7px;
 }
-
 .fa {
-  line-height: 1.4em;
+    line-height: 1.4em;
 }
-
 .fa-linkedin {
-  background: #440055;
+    background: #440055;
 }
-
 .fa-github {
-  background: #660080;
+    background: #660080;
 }
-
 .icon-codepen {
-  background: #8800aa;
+    background: #8800aa;
 }
-
 .fa-codepen {
-  background: #8800aa;
+    background: #8800aa;
 }
-
 .fa-pinterest {
-  background: #aa00d4;
+    background: #aa00d4;
 }
-
 .fa-free-code-camp {
-  background: #cc00df;
+    background: #cc00df;
 }
-
 .icon-freecodecamp {
-  background: #cc00df;
+    background: #cc00df;
 }
-
 .fa-phone {
-  background: limegreen;
+    background: limegreen;
 }
-
 .social-button-nav li a i:hover {
-  box-shadow: 0px 1px 9px 2px #888888;
+    box-shadow: 0px 1px 9px 2px #888888;
 }
-
 .social-button li a i:hover {
-  box-shadow: 0px 1px 7px 2px #8800aa;
+    box-shadow: 0px 1px 7px 2px #8800aa;
 }
-
 .nav-item .fa {
-  color: #fff;
-  font-size: 1.2em;
-  margin-right: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    margin-right: 5px;
 }
 /* END SOCIAL ICONS *
 
