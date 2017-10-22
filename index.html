@@ -2,10 +2,18 @@
 <html>
 
 <head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="UTF-8">
+  <title>Reinier Caron webdeveloper</title>
+  <meta name="description" content="Portfolio of Reinier Caron, Webdeveloper and creative mind.">
+  <meta name="keywords" content="portfolio, curriculum vitae, webdevelopment, frontend">
+  <meta name="author" content="Reinier Caron">
+
+  <!-- Mobile Specific Metas
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <!-- This wil scale the fontsize so high res mobile users won´t have to squint -->
-  <title>Reinier Caron webdeveloper</title>
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
   <link rel='stylesheet prefetch' href='/font-awesome-4.7.0/css/font-awesome.min.css'>
@@ -38,7 +46,7 @@
     <!-- end of Banner group -->
 
     <!-- Navigation -->
-    <nav id="navbar-default" class="navbar navbar-inverse bg-inverse" data-toggle="sticky-onscroll">
+    <nav id="navbar-default" class="navbar navbar-toggleable-sm navbar-inverse bg-inverse" data-toggle="sticky-onscroll">
       <div class="container">
         <div class="row"> <button class="navbar-toggler navbar-toggler-right pull-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -72,7 +80,7 @@
 
   <!-- Fullscreen hero -->
     <div id="hero-text">
-      <div id="candy" class="col container justify-content-between text-center my-auto">
+      <div id="candy" class="col container justify-content-between text-center my-auto hero-buttons">
         <div class="row row-grid">
           <div class="col-12 col-sm-4">
             <a href="#gotoabout"><i class="fa fa-user-circle glyphicon" aria-hidden="true"></i><br><p class="scale">Wie?</p><br></a>
@@ -89,9 +97,9 @@
   </div>
 
 
-  <!-- About -->
-  <section>
-
+  <!-- About
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="about-wie">
     <div class="container">
       <div class="col-12">
         <br><hr/>
@@ -262,9 +270,6 @@
                 </div>
               </div>  <!-- end card -->
 
-              <!-- Add the extra clearfix for only the required viewport -->
-              <!-- <div class="clearfix hidden-sm-up"></div> -->
-
               <div class="card">
                 <div class="card-header" role="tab" id="Zelfontplooing">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
@@ -409,10 +414,9 @@
   <!--/section #about-->
 
 
-  <!-- Portfolio -->
-
-  <section>
-
+  <!-- Portfolio
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="portfolio">
     <div class="container">
       <div class="col-12">
         <br><hr/>
@@ -723,10 +727,9 @@
 
 
 
-  <!-- start curriculum vitea -->
-  <section>
-
-  <!-- start container cv -->
+  <!-- start curriculum vitea
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="cv">
     <div id="container-curriculum-vitae" class="container-fluid justify-content-around">
       <div class="col-12">
         <br><hr/>
@@ -741,23 +744,19 @@
         </div>
       </div>
     </div>
-    <!-- /.container curriculum vitea -->
   </section>
 
 
-
-<section>
-  <hr/>
-  <!-- start container contact -->
+  <!-- start container contact
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="contact">
   <div id="container-contact" class="container">
     <div class="col-12">
+      <hr/>
       <h2 id="gotocontact" class="anchor font-3 text-center"><b>Contact</b></h2>
     </div>
-
-    <!-- contact formulier -->
     <div class="row">
       <div class="col-12 col-md-5 ">
-
         <div class="row ">
           <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-12 justify-content-between contactpadding">
             <adress>
@@ -770,7 +769,6 @@
               </div>
             </adress>
           </div>
-
           <div class="col-10 offset-1 col-sm-6 offset-sm-0 col-md-12 justify-content-between contactpadding">
             <ul class="social-button" style="list-style-type: none;">
               <li><a href="https://www.linkedin.com/in/reinier-caron" target="_blank"><i class="fa fa-linkedin"></i>   LinkedIn</a></li>
@@ -781,31 +779,25 @@
               <li><a href="tel:+31642621678" class="xlhide"><i class="fa fa-phone"></i>   Bel me</a></li>
             </ul>
           </div>
-
         </div>
       </div>
-
       <div class="col-12 col-md-6 flex-md-first ">
         <form role="form" id="contactForm">
           <div class="form-group">
             <label for="name">Naam</label>
             <input type="text" class="form-control" id="name" required>
           </div>
-
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" required>
           </div>
-
           <div class="form-group" id="email1">
             <label for="email">vul dit niet in</label>
             <input type="email" name="email" class="form-control" placeholder="Laat dit leeg" />
           </div>
-
           <div class="form-group">
             <textarea id="message" class="form-control" rows="5" required placeholder="Bericht hier"></textarea>
           </div>
-
           <div class="row justify-content-between">
             <div class="col-4">
               <button type="submit" id="form-submit" class="btn btn-succes vertmid">Verzend</button>
@@ -814,14 +806,15 @@
               <div id="msgSubmit" class="h6 hidden">Bericht verzonden!&nbsp;&nbsp;<i id="check" class="fa fa-check-square-o fa-2x vertmid" aria-hidden="true"></i></div>
             </div>
           </div>
-
         </form>
       </div>
     </div><br><br><br><br>
-  </div><!-- /.container contact -->
+  </div>
 </section>
 
-<footer class="main-footer">
+<!-- start footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer class="main-footer">
   <div class="container-fluid">
     <div id="container-footer" class="footer container">
       <div class="col-12 text-white font-1 text-center">

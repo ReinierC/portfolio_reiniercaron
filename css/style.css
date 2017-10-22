@@ -227,6 +227,15 @@ h2.anchor {
     bottom: 0;
     right: 0;
 }
+
+.hero-buttons {
+  position: relative;
+  top: 55vh;
+  transform: translateY(-55vh);
+  left: 50vw
+  transform: translateX(-50vw);
+}
+
 #hero {
     background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1507560043/reiniercaron-nl/backgroundhero.svg);
     background-size: cover;
