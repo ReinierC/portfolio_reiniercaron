@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
     /*this fixes the issue with bootstraps row right margin property overflowing 100% page width */
     background-color: #eceeef;
+    background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/white_leather.png");
     font-size: 1.1em;
 }
 hr {
@@ -278,17 +279,26 @@ h2.anchor {
         font-size: 3vw;
         margin-top: 3vw;
     }
+    .glyphicon {
+        font-size: 10vw!important;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     #hero-text {
         font-size: 2vw;
         margin-top: 2.5vw;
     }
+    .glyphicon {
+        font-size: 9vw!important;
+    }
 }
 @media all and (min-width: 1200px) {
     #hero-text {
         font-size: 2vw;
         margin-top: 2.5vw;
+    }
+    .glyphicon {
+        font-size: 7vw!important;
     }
 }
 /*  END HERO SECTION */
