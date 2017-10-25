@@ -123,8 +123,50 @@ h6 {
     }
 }
 /*  switch between small & large banner images  */
-
+@media (min-width: 601px) {
+    .sm-logo {
+        display: none;
+    }
+    h2.anchor {
+        padding-top: 65px;
+        margin-top: -65px;
+    }
+    .xlhide {
+        display: none;
+    }
+    #particles-js{
+      width: 100%;
+      height: 15vw;
+      /*background-color: #660080;*/
+      background: url('https://res.cloudinary.com/madhatter/image/upload/v1491166312/rclogo-purple-inset_uev6k3.svg') no-repeat fixed;
+      background-size:100%;
+    }
+}
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
 @media (max-width: 600px) {
+    .xl-logo {
+        display: none;
+    }
+    .sm-logo {
+        padding: 6px 17px 0px 17px;
+        background-color: #292B2C;
+    }
+    h2.anchor {
+        padding-top: 225px;
+        margin-top: -225px;
+    }
+    #particles-js{
+      width: 100%;
+      height: 18vw;
+      background-color: #000;
+      background: url('http://res.cloudinary.com/madhatter/image/upload/v1508876992/reiniercaron-nl/rclogo_ss_m86aim.svg') no-repeat;
+      background-size: 100%;
+    }
+}
+/*@media (max-width: 600px) {
     #xl-logo {
         display: none;
     }
@@ -136,7 +178,7 @@ h6 {
         padding-top: 225px;
         margin-top: -225px;
     }
-}
+}*/
 /* END BANNER */
 
 /* ---===###  NAVIGATION  ###===--- */
@@ -188,7 +230,7 @@ h2.anchor {
 }
 /* main-nav social button styles */
 
-@media (min-width: 600px) {
+@media (min-width: 601px) {
     ul.social-button-nav li a i {
         color: #fff;
         width: 40px;
@@ -202,7 +244,7 @@ h2.anchor {
         transition: all 0.3s ease-in-out;
     }
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
     ul.social-button-nav li a i {
         color: #fff;
         width: 24px;
