@@ -71,6 +71,12 @@ h6 {
     }
 }
 
+.no-margin-bottom {    /* used on h3 with extra text  */
+  margin-bottom: 0px;
+}
+.h3-margin {
+margin-left: 2.6em;
+}
 /* TO BE SORTED */
 .whitebg {
     background-color: #fff;
