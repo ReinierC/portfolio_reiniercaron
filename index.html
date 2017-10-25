@@ -31,22 +31,18 @@
   <!-- Header banner+nav -->
   <div id="banner-nav-group" class="container-fluid noPadding">
     <!-- Banner group -->
-    <div class="col-12 container-fluid noPadding">
-        <div id="particles-js"></div>
-      </div>
-
-    <!-- <div class="row">
-      <div id="xl-logo" class="col-12"> -->
+    <div class="row">
+      <div id="xl-logo" class="col-12">
         <!-- Large banner purple -->
-        <!-- <img src="https://res.cloudinary.com/madhatter/image/upload/v1491166312/rclogo-purple-inset_uev6k3.svg" class="imgfull"/>
+        <img src="https://res.cloudinary.com/madhatter/image/upload/v1491166312/rclogo-purple-inset_uev6k3.svg" class="imgfull"/>
       </div>
     </div>
     <div class="row">
-      <div id="sm-logo" class="col-12 text-center"> -->
+      <div id="sm-logo" class="col-12 text-center">
         <!-- Small banner black -->
-        <!-- <img src="https://res.cloudinary.com/madhatter/image/upload/v1491191172/rclogo_ss_zyvi9t.svg" class="imgfull"/>
+        <img src="http://res.cloudinary.com/madhatter/image/upload/v1508876992/reiniercaron-nl/rclogo_ss_m86aim.svg" class="imgfull"/>
       </div>
-    </div> -->
+    </div>
     <!-- end of Banner group -->
 
     <!-- Navigation -->
@@ -148,13 +144,14 @@
 
         <div class="col-12 col-md-6 marbot15 boxshadow greyt">
           <h3 class="font-1 ">Hardskills</h3>
+          <sub>Hoe mijn kennis momenteel is opgebouwd</sub>
           <table class="table table-striped">
             <tbody>
               <tr>
                 <td class="text-danger"><i class="fa icon-html5 fa-2x" aria-hidden="true"></i></td>
                 <td class="">HTML5
                   <div class="progress whitebg">
-                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">36%
                     </div>
                   </div>
                 </td>
@@ -163,7 +160,7 @@
                 <td class="text-primary"><i class="fa icon-css3 fa-2x" aria-hidden="true"></i></td>
                 <td>CSS3
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%
+                    <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">36%
                     </div>
                   </div>
                 </td>
@@ -172,7 +169,7 @@
                 <td class="text-warning"><i class="icon-javascript fa-2x" aria-hidden="true"></i></td>
                 <td>Javascript
                   <div class="progress whitebg">
-                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:40%">40%
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:40%">16%
                     </div>
                   </div>
                 </td>
@@ -181,7 +178,7 @@
                 <td class="text-info"><i class="fa icon-jquery fa-2x" aria-hidden="true"></i></td>
                 <td>jQuery
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:40%">40%
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:40%">16%
                     </div>
                   </div>
                 </td>
@@ -190,7 +187,7 @@
                 <td class="text-success"><i class="fa icon-php-alt fa-2x" aria-hidden="true"></i></td>
                 <td>php
                   <div class="progress whitebg">
-                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:35%">35%
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:35%">14%
                     </div>
                   </div>
                 </td>
@@ -836,16 +833,24 @@
   <script src='https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
   <script src='https://use.fontawesome.com/8fcec8414b.js'></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/app.js"></script>
 
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/jquery.email-autocomplete.min.js"></script>
+
   <!-- html5 form validation messages -->
 
   <script>
   $("img.lazy").lazyload();
   </script>
+
+  <script>
+$("#email").emailautocomplete({
+  suggClass: "custom-classname",
+  domains: ["example.com"]
+});
+</script>
+
 
   <!-- Vertically center Bootstrap modals so they aren't always stuck at the top --->
   <script>
