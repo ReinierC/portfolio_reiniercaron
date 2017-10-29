@@ -316,20 +316,30 @@ h2.anchor {
 }
 
 .myskill p {
-  font-size: 2vw!important;
+  font-size: 1.4em!important;
 }
 
 @include media-breakpoint-up(sm) {
   .myskill p {
-    font-size: 2vw!important;
+    font-size: 1.5vw!important;
   }
 }
 
 @include media-breakpoint-up(md) {
   .myskill p {
-    font-size: 1vw!important;
+    font-size: 0.5vw!important;
   }
 }
+}
+@include media-breakpoint-up(lg) {
+  .myskill p {
+    font-size: 0.5vw!important;
+  }
+}
+}
+
+.bottompad10 {
+  padding-bottom: 20px!important;
 }
 /* END ABOUT (Wie?) SECTION */
 
