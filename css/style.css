@@ -98,9 +98,12 @@ margin-left: 2.6em;
 .vertmid {
     vertical-align: middle!important;
 }
-.oxblood {
-    color: #76323F;
+
+.no-margin-lr {   /*  used to remove padding from row class  */
+  margin-left: 0px;
+  margin-right: 0px;
 }
+
 /* END to be sorted */
 
 /* ---===###  BANNER  ###===--- */
@@ -190,7 +193,7 @@ h2.anchor {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 9998;
     width: 100%;
 }
 /* main-nav social button styles */
@@ -250,8 +253,8 @@ h2.anchor {
     height: 100vh;
 }
 #hero-text {
-    font-size: 4vw;
-    margin-top: 4vw;
+    font-size: 1em;
+    margin-top: 1em;
 }
 #candy a {
     color: #FFFAF0!important;
@@ -522,7 +525,19 @@ ul.social-button li a i {
     font-size: 1.2em;
     margin-right: 5px;
 }
-/* END SOCIAL ICONS *
+/* END SOCIAL ICONS */
+#particles-js {
+   /*background-color: #660080;*/
+   position:fixed;
+   top:0;
+   right:0;
+   bottom:0;
+   left:0;
+   z-index:0;
+ }
+ #overlay {
+   position:relative;
+ }
 
 
 /*The best way to deal with Bootstrap is hit it with a sledgehammer
