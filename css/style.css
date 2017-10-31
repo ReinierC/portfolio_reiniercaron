@@ -13,18 +13,23 @@
     /*font-family: 'Roboto Slab', serif;*/
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600important;
+    color: White;
 }
 body {
     overflow-x: hidden;
     /*this fixes the issue with bootstraps row right margin property overflowing 100% page width */
     background-color: #eceeef;
-    background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/white_leather.png");
+    /*background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/white_leather.png");*/
+    background-image: url("http://res.cloudinary.com/madhatter/image/upload/v1509405056/reiniercaron-nl/rc-logo-blueline-1900.svg");
+    background-repeat: repeat-y;
+    background-size: contain;
+
     font-size: 1em;
 }
 hr {
     border: 0;
     height: 3px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255,255,255, 0.7), rgba(0, 0, 0, 0));
 }
 
 /*a {
@@ -142,10 +147,10 @@ margin-left: 2.6em;
     #xl-logo {
         display: none;
     }
-    #sm-logo {
+    /*#sm-logo {
         padding: 6px 17px 0px 17px;
         background-color: #292B2C;
-    }
+    }*/
     h2.anchor {
         padding-top: 225px;
         margin-top: -225px;
@@ -251,19 +256,19 @@ h2.anchor {
 }
 
 #hero {
-    background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1507560043/reiniercaron-nl/backgroundhero.svg);
+    /*background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1507560043/reiniercaron-nl/backgroundhero.svg);*/
+    /*background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1509410185/reiniercaron-nl/gorilla.svg);*/
+    /*background-size: 100%;*/
+    /*height: 60vh;*/
+}
+#hero {
+    /*background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1509410185/reiniercaron-nl/gorilla.svg);*/
     background-size: cover;
     position: relative;
-    height: 100vh;
-}
-#hero-text {
-    font-size: 1em;
-    /*margin-top: 1em;*/
+    height: 85vh;
 }
 
-.gorilla {
-  width: 45vh;
-}
+
 .glyphicon {
     font-size: 15vw!important;
 }
@@ -276,7 +281,7 @@ h2.anchor {
     color: #FFFAF0!important;
     text-decoration: none!important;
 }
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
     #hero-text .col-12 {
         padding-top: 6vh!important;
     }
@@ -285,55 +290,52 @@ h2.anchor {
     #hero-text .col-12 {
         padding-top: 2vh!important;
     }
-}
-@media (min-width: 400px) and (max-width: 1099px) and (orientation:landscape) {
+}*/
+@media (min-width: 400px) and (max-width: 699px) and (orientation:landscape) {
   .glyphicon {
-      font-size: 8.5vh!important;
-  }
-  .gorilla {
-    width: 15vh;
+      font-size: 10vh!important;
   }
   .scale {
       padding-top: 0.4vh!important;
       font-size: 2.5vw!important;
   }
-}
-/*@media (min-width: 600px) and (max-width: 1000px) and (orientation:landscape) {
-  .glyphicon {
-      font-size: 8.5vh!important;
+  #monkey {
+    visibility: hidden;
   }
-  .gorilla {
-    width: 35vh;
+}
+@media (min-width: 700px) and (max-width: 1000px) and (orientation:landscape) {
+  .glyphicon {
+      font-size: 10vh!important;
   }
   .scale {
       padding-top: 0.5vh!important;
       font-size: 3vw!important;
   }
-}*/
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #hero-text {
+    /*#hero-text {
         font-size: 3vw;
         margin-top: 3vw;
-    }
+    }*/
     .glyphicon {
         font-size: 10vw!important;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-    #hero-text {
+    /*#hero-text {
         font-size: 2vw;
         margin-top: 2.5vw;
-    }
+    }*/
     .glyphicon {
         font-size: 7vw!important;
     }
 }
 @media all and (min-width: 1200px) {
-    #hero-text {
+    /*#hero-text {
         font-size: 1.8vw;
         margin-top: 1.5vw;
-    }
+    }*/
     .glyphicon {
         font-size: 6vw!important;
     }
