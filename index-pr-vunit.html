@@ -35,121 +35,105 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <!-- vUnit.js to the head to avoid FOUC -->
-  	<script type="text/javascript" src="js/vunit-0.2.0.min.js"></script>
-    <!-- Instantiate vUnit.js passing a CSSMap with properties you want to play with -->
-  	<script type="text/javascript">
-  		new vUnit({
-  			CSSMap: {
-  				'.vh': {
-  					property: 'height',
-  					reference: 'vh'
-  				},
-  				'.vw': {
-  					property: 'width',
-  					reference: 'vw'
-  				},
-  				'.vwfs': {
-  					property: 'font-size',
-  					reference: 'vw'
-  				},
-  				'.vhmt': {
-  					property: 'margin-top',
-  					reference: 'vh'
-  				},
-  				'.vhmb': {
-  					property: 'margin-bottom',
-  					reference: 'vh'
-  				},
-  				'.vminw': {
-  					property: 'width',
-  					reference: 'vmin'
-  				},
-  				'.vmaxw': {
-  					property: 'width',
-  					reference: 'vmax'
-  				}
-  			}
-  		}).init();
-  	</script>
-
 </head>
 
 <body>
   <div id="particles-js"></div>
-  <div id="overlay">  <!-- body content here while using particles-js-->
-    <div id="heroSection" class="vunit vh90">
-      <div id="banner-nav-group" class="container-fluid noPadding">  <!-- Header banner+nav -->
-        <div class="row"><!-- Banners -->
-          <div id="xl-logo" class="col-12">
-            <img src="http://res.cloudinary.com/madhatter/image/upload/v1509617766/rclogo-white-no-bg_oi0zg0.svg" class="imgfull"/>  <!-- Large banner purple -->
+  <div id="overlay">
+
+  <!-- Header banner+nav -->
+  <div id="banner-nav-group" class="container-fluid noPadding">
+    <!-- Banner group -->
+    <div class="row">
+      <div id="xl-logo" class="col-12">
+        <!-- Large banner purple -->
+        <img src="http://res.cloudinary.com/madhatter/image/upload/v1509398919/rclogo-white-no-bg_du71lw.svg" class="imgfull"/>
+      </div>
+    </div>
+    <div class="row">
+      <div id="sm-logo" class="col-12 text-center">
+        <!-- Small banner black -->
+        <img src="http://res.cloudinary.com/madhatter/image/upload/v1509409267/reiniercaron-nl/rclogo_ss.svg" class="imgfull"/>
+      </div>
+    </div>
+    <!-- end of Banner group -->
+
+    <!-- Navigation -->
+    <nav id="navbar-default" class="navbar navbar-toggleable-sm navbar-inverse bg-inverse" data-toggle="sticky-onscroll">
+      <div class="container">
+        <div class="row"> <button class="navbar-toggler navbar-toggler-right pull-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="navbar-header">
+            <ul class="social-button-nav nav">
+              <li><a href="https://www.linkedin.com/in/reinier-caron" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/ReinierCaron" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://codepen.io/ReinierCaron" target="_blank"><i class="fa fa-codepen"></i></a></li>
+              <li><a href="https://pinterest.com/reiniercaron" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="https://www.freecodecamp.com/reiniercaron" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+              <li><a href="tel:+31642621678" class="xlhide"><i class="fa fa-phone"></i> </a></li>
+            </ul>
           </div>
         </div>
-        <div class="row">
-          <div id="sm-logo" class="col-12 text-center">
-            <img src="http://res.cloudinary.com/madhatter/image/upload/v1509617761/rclogo_ss_ffli7z.svg" class="imgfull"/>  <!-- Small banner black -->
-          </div>
-        </div>  <!-- end of Banner group -->
-        <nav id="navbar-default" class="navbar navbar-toggleable-sm navbar-inverse bg-inverse" data-toggle="sticky-onscroll">  <!-- Navigation -->
-          <div class="container">
-            <div class="row">
-              <button class="navbar-toggler navbar-toggler-right pull-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-header">
-                <ul class="social-button-nav nav">
-                  <li><a href="https://www.linkedin.com/in/reinier-caron" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://github.com/ReinierCaron" target="_blank"><i class="fa fa-github"></i></a></li>
-                  <li><a href="https://codepen.io/ReinierCaron" target="_blank"><i class="fa fa-codepen"></i></a></li>
-                  <li><a href="https://pinterest.com/reiniercaron" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                  <li><a href="https://www.freecodecamp.com/reiniercaron" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
-                  <li><a href="tel:+31642621678" class="xlhide"><i class="fa fa-phone"></i> </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul id="navbar-nav" class="navbar-nav">
-                <li class="nav-item"><a class="align-items-center d-inline-flex closethis nav-link" href="#gotoabout"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Wie? <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="align-items-center d-inline-flex closethis nav-link" href="#gotoportfolio"><i class="fa fa-camera-retro"></i>
-                  Portfolio</a></li>
-                <li class="nav-item"><a class="align-items-center d-inline-flex closethis nav-link" href="#gotocv"><i class="fa fa-briefcase" aria-hidden="true"></i>C.V.</a></li>
-                <li class="nav-item"><a class="align-items-center d-inline-flex closethis nav-link" href="#gotocontact"><i class="fa fa-address-card-o" aria-hidden="true"></i>Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>  <!-- end of Navigation -->
-      </div>  <!-- end of Header banner+nav -->
-      <div class="col-10 offset-1 text-center font-1 text-center pt-4 pb-3">
-        <p class="heroText text-white">Will code for bananas</p>
       </div>
-      <div class="col-12 text-center pb-4">
-        <img id="monkey" class="img-fluid" src="http://res.cloudinary.com/madhatter/image/upload/v1509617681/gorilla-darker_nlkpzm.svg" />
+      <div class="row">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul id="navbar-nav" class="navbar-nav">
+            <li class="nav-item"><a class="align-items-center d-inline-flex closethis nav-link" href="#gotoabout"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Wie? <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="align-items-center d-inline-flex closethis nav-link" href="#gotoportfolio"><i class="fa fa-camera-retro"></i>
+          Portfolio</a></li>
+          <li class="nav-item"><a class="align-items-center d-inline-flex closethis nav-link" href="#gotocv"><i class="fa fa-briefcase" aria-hidden="true"></i>C.V.</a></li>
+            <li class="nav-item"><a class="align-items-center d-inline-flex closethis nav-link" href="#gotocontact"><i class="fa fa-address-card-o" aria-hidden="true"></i>Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="vunit vh10 vhmb5">
-      <div class="col-12 text-center mt-3">
-        <i class="heroText fa fa-angle-double-down text-white" aria-hidden="true"></i>
+    </nav>  <!-- end of Navigation -->
+  </div>  <!-- end of Header banner+nav -->
+
+
+  <!-- Fullscreen hero -->
+  <div id="hero">
+    <div id="hero-text">
+      <div id="candy" class="col container justify-content-around text-center my-auto hero-buttons">
+        <!-- <div class="row"> -->
+          <!-- <div class="col-4 col-sm-4">
+            <a href="#gotoabout"><i class="fa fa-user-circle glyphicon" aria-hidden="true"></i><br><p class="scale font-1">Wie?</p></a>
+          </div>
+          <div class="col-4 col-sm-4">
+            <a href="#gotoportfolio"><i class="fa fa-camera-retro glyphicon" aria-hidden="true"></i><br><p class="scale font-1">Portfolio</p></a>
+          </div> -->
+          <div class="col-10 offset-1 text-center largep font-1 text-white text-center">
+            <p>Will code for bananas</p>
+            <!-- <a href="#gotocv"><i class="fa fa-briefcase glyphicon" aria-hidden="true"></i><br><p class="scale font-1">C.V.</p></a> -->
+          </div>
+      <div class="col-12">
+        <img id="monkey" class="img-fluid" src="http://res.cloudinary.com/madhatter/image/upload/v1509458130/gorilla-darker_gpwd7f.svg" />
+        <br></br>
+        <i class="bounce fa fa-angle-double-down text-white" aria-hidden="true"></i>
       </div>
-    </div>
+    <!-- </div> -->
+  </div>
+</div>
+</div>
+
+
 
   <!-- About
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <section id="about-wie">
     <div class="container">
       <div class="col-12">
-        <br>
+        <br><hr/>
         <h2 id="gotoabout" class="anchor font-3 text-center ">Wie?</h2>
       </div>
 
 
-          <div class="col-12 marbot15 greyt text-center pt-4 pb-1">
-            <img class="rounded-circle img-fluid bakkes mx-auto d-block" src="https://res.cloudinary.com/madhatter/image/upload/v1491216895/reinier_xjwiwf.jpg">
+          <div class="col-12 marbot15 greyt boxshadow text-center">
+            <img class="rounded-circle img-thumbnail img-fluid mx-auto d-block" src="https://res.cloudinary.com/madhatter/image/upload/v1491216895/reinier_xjwiwf.jpg">
             <h3 class="font-1">Reinier Caron</h3>
           </div>
 <div class="row no-margin-lr">
-        <div class="col-12 marbot15 greyt  mt-4">
+        <div class="col-12 marbot15 greyt boxshadow">
           <h3 class="font-1 text-center">Soft skills</h3>
           <table class="table table-striped">
             <tbody>
@@ -181,7 +165,7 @@
           </table>
         </div>
 
-        <div class="col-12 marbot15 greyt  mt-4">
+        <div class="col-12 marbot15 greyt boxshadow">
           <div class="col-12">
             <h3 class="font-1 text-center">Hardskills</h3>
           </div>
@@ -210,7 +194,7 @@
             </div>
           </div><!--end row-->
 
-        <div class="col-10 offset-1 mt-4">
+        <div class="col-10 offset-1">
             <br>
             <p><b id="skillContent1" class="">Interesses en Kennis</b></p>
             <p id="skillContent2">Krijg door een onderwerp te selecteren een indicatie van mijn huidige interesses en kennis. Waar ik mee bezig ben en wat ik in de nabije toekomst denk te willen leren.
@@ -245,7 +229,7 @@
         </div>
       </div>
 
-        <div class="col-12 col-lg-6 marbot15 greyt  mt-4">
+        <div class="col-12 col-lg-6 marbot15 greyt boxshadow">
           <h3 class="font-1 text-center">Interesses</h3>
           <div class="col-12 align-items-center justify-content-around">
             <div id="accordion" role="tablist" aria-multiselectable="true">
@@ -388,7 +372,7 @@
           </div><br>
         </div>
 
-        <div class="col-12 col-lg-6 marbot15 greyt mt-4">
+        <div class="col-12 col-lg-6 marbot15 greyt boxshadow">
           <h3 class="font-1 text-center">Personalia</h3>
           <table class="table table-striped">
             <tbody>
@@ -447,14 +431,14 @@
   <section id="portfolio">
     <div class="container">
       <div class="col-12">
-        <br>
+        <br><hr/>
         <h2 id="gotoportfolio" class="anchor font-3 text-center">Portfolio</h2>
       </div>
         <div class="row">
           <!-- Modal 1 -->
           <!-- Portfolio garagewesterhof.nl -->
           <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <a data-toggle="modal" href="#westModal"><img class="lazy img-fluid img-thumbnail " data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190289/reiniercaron-nl/thumbnailgallery/garage-westerhof.png"></a>
+            <a data-toggle="modal" href="#westModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190289/reiniercaron-nl/thumbnailgallery/garage-westerhof.png"></a>
             <!-- Modal -->
             <div class="modal" id="westModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -478,10 +462,32 @@
             <!-- /.modal -->
           </div>
           <!-- Modal 2 -->
-
+          <!-- Portfolio image reiniercaron.nl -->
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <a data-toggle="modal" href="#reinModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190294/reiniercaron-nl/thumbnailgallery/reiniercaron-nl.png" alt="" /></a>
+            <!-- Modal -->
+            <div class="modal" id="reinModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close text-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="http://res.cloudinary.com/madhatter/image/upload/v1507190294/reiniercaron-nl/thumbnailgallery/reiniercaron-nl.png" alt="" />
+                  </div>
+                  <footer class="modul-footer">
+                    <p>Gebouwd met <a href="http://www.getbootstrap.com "> Bootstrap IV</a><br><sub><strong>HML5 - CSS3 - javaScript</strong>
+                        <br><i>© Reinier Caron</i></sub></p>
+                  </footer>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+          </div>
+          <!-- Modal 3 -->
           <!-- Portfolio weer API -->
           <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <a data-toggle="modal" href="#weerModal"><img class="lazy img-fluid img-thumbnail " data-original="http://res.cloudinary.com/madhatter/image/upload/w_500,h_500/v1507800597/reiniercaron-nl/weer-api.png" alt="" /></a>
+            <a data-toggle="modal" href="#weerModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/w_500,h_500/v1507800597/reiniercaron-nl/weer-api.png" alt="" /></a>
             <!-- Modal -->
             <div class="modal" id="weerModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -519,11 +525,36 @@
             </div>
             <!-- /.modal -->
           </div>
-
+          <!-- Modal 5 -->
+          <!-- Portfolio image Losi -->
+          <div class="col-lg-3 col-md-4 col-6  mb-4">
+            <a data-toggle="modal" href="#losiModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190288/reiniercaron-nl/thumbnailgallery/lositribute.png" alt="" /></a>
+            <!-- Modal -->
+            <div class="modal" id="losiModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close text-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="http://res.cloudinary.com/madhatter/image/upload/v1507190288/reiniercaron-nl/thumbnailgallery/lositribute.png" alt="" />
+                  </div>
+                  <footer class="modul-footer">
+                    <div class="text-center">
+                      <a class="btn btn-succes" href="https://codepen.io/ReinierCaron/pen/ZeVVEw" target="_blank" role="button">Bekijken op Codepen</a>
+                    </div>
+                    <p>Een Free Code Camp lesopdracht.<br><sub><strong>HML5 - CSS3</strong>
+                        <br><i>© Reinier Caron</i></sub></p>
+                  </footer>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+          </div>
           <!-- Modal 6 -->
           <!-- Portfolio image YAQM -->
           <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <a data-toggle="modal" href="#yaqmModal"><img class="lazy img-fluid img-thumbnail " data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190294/reiniercaron-nl/thumbnailgallery/YAQM.png" alt="" /></a>
+            <a data-toggle="modal" href="#yaqmModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190294/reiniercaron-nl/thumbnailgallery/YAQM.png" alt="" /></a>
             <!-- Modal -->
             <div class="modal" id="yaqmModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -549,7 +580,7 @@
           <!-- Modal 7 -->
           <!-- Portfolio image MusicalAnders -->
           <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <a data-toggle="modal" href="#maModal"><img class="lazy img-fluid img-thumbnail " data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190292/reiniercaron-nl/thumbnailgallery/musicalanders.png" alt="" /></a>
+            <a data-toggle="modal" href="#maModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190292/reiniercaron-nl/thumbnailgallery/musicalanders.png" alt="" /></a>
             <!-- Modal -->
             <div class="modal" id="maModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -571,7 +602,7 @@
           <!-- Modal 8 -->
           <!-- Portfolio image Aardbei Kikker -->
           <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <a data-toggle="modal" href="#kikModal"><img class="lazy img-fluid img-thumbnail " data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190284/reiniercaron-nl/thumbnailgallery/aardbeikikker.png" alt="" /></a>
+            <a data-toggle="modal" href="#kikModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190284/reiniercaron-nl/thumbnailgallery/aardbeikikker.png" alt="" /></a>
             <!-- Modal -->
             <div class="modal" id="kikModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -590,12 +621,32 @@
             </div>
             <!-- /.modal -->
           </div>
-
-
+          <!-- Modal 9 -->
+          <!-- Portfolio image UFO -->
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <a data-toggle="modal" href="#ufoModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190294/reiniercaron-nl/thumbnailgallery/ufo.png" alt="" /></a>
+            <!-- Modal -->
+            <div class="modal" id="ufoModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close text-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="http://res.cloudinary.com/madhatter/image/upload/v1507190294/reiniercaron-nl/thumbnailgallery/ufo.png" alt="" />
+                  </div>
+                  <footer class="modul-footer">
+                    <p>CSS3 animatie test<br><sub><strong>CSS3 - Inkscape</strong><br><i>© Reinier Caron</i></sub></p>
+                  </footer>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+          </div>
           <!-- Modal 11 -->
           <!-- Portfolio image hotrod -->
           <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <a data-toggle="modal" href="#hotModal"><img class="lazy img-fluid img-thumbnail " data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190294/reiniercaron-nl/thumbnailgallery/hotrodmagazine.png" alt="" /></a>
+            <a data-toggle="modal" href="#hotModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190294/reiniercaron-nl/thumbnailgallery/hotrodmagazine.png" alt="" /></a>
             <!-- Modal -->
             <div class="modal" id="hotModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -615,11 +666,31 @@
             <!-- /.modal -->
           </div>
           <!-- Modal 12 -->
-
+          <!-- Portfolio image siep -->
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <a data-toggle="modal" href="#siepModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190297/reiniercaron-nl/thumbnailgallery/Siebrengeboren.png" alt="" /></a>
+            <!-- Modal -->
+            <div class="modal" id="siepModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close text-right" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="modal-body text-center">
+                    <img class="img-fluid" src="http://res.cloudinary.com/madhatter/image/upload/v1507190297/reiniercaron-nl/thumbnailgallery/Siebrengeboren.png" alt="" />
+                  </div>
+                  <footer class="modul-footer">
+                    <p>Fotobewerking<br><sub><strong>Gimp image editor</strong><br><i>© Reinier Caron</i></sub></p>
+                  </footer>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+          </div>
           <!-- modal 13 -->
           <!-- Portfolio image arend -->
           <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <a data-toggle="modal" href="#arendModal"><img class="lazy img-fluid img-thumbnail " data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190289/reiniercaron-nl/thumbnailgallery/Arengeboren.png" alt="" /></a>
+            <a data-toggle="modal" href="#arendModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190289/reiniercaron-nl/thumbnailgallery/Arengeboren.png" alt="" /></a>
             <!-- Modal -->
             <div class="modal" id="arendModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -641,7 +712,7 @@
           <!-- modal 14 -->
           <!-- Portfolio image aardgodin -->
           <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <a data-toggle="modal" href="#aardModal"><img class="lazy img-fluid img-thumbnail " data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190285/reiniercaron-nl/thumbnailgallery/earthgodess1.png" alt="" /></a>
+            <a data-toggle="modal" href="#aardModal"><img class="lazy img-fluid img-thumbnail boxshadow" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507190285/reiniercaron-nl/thumbnailgallery/earthgodess1.png" alt="" /></a>
             <!-- Modal -->
             <div class="modal" id="aardModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
@@ -672,18 +743,18 @@
   <section id="cv">
     <div id="container-curriculum-vitae" class="container-fluid justify-content-around">
       <div class="col-12">
-        <br>
+        <br><hr/>
         <h2 id="gotocv" class="anchor font-3 text-center">Curriculum Vitae</h2>
       </div>
       <div class="row">
         <div class="col-12 col-sm-4 offset-sm-2 col-lg-3 offset-lg-3 text-center marbot15">
           <a class="text-white" href="/downloads/Reinier-CV-12-10-2017.pdf" download="cv-reinier-caron.pdf">
-            <img class="lazy img-fluid  greyt" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507806021/reiniercaron-nl/Reinier_CV_2-5-2017.png" />
+            <img class="lazy img-fluid boxshadow greyt" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507806021/reiniercaron-nl/Reinier_CV_2-5-2017.png" />
             <br>Download C.V.<br></a>
         </div>
         <div class="col-12 col-sm-4 col-lg-3 text-center marbot15">
           <a class="text-white" href="/downloads/pop_reiniercaron.pdf" download="pop-reinier-caron.pdf">
-            <img class="lazy img-fluid  greyt" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507844899/reiniercaron-nl/reinier-caron-pop.png" />
+            <img class="lazy img-fluid boxshadow greyt" data-original="http://res.cloudinary.com/madhatter/image/upload/v1507844899/reiniercaron-nl/reinier-caron-pop.png" />
             <br>Download p.o.p.<br></a>
         </div>
       </div>
@@ -695,10 +766,10 @@
   <section id="contact">
   <div id="container-contact" class="container">
     <div class="col-12">
-      <br>
+      <br><hr/>
       <h2 id="gotocontact" class="anchor font-3 text-center">Contact</h2>
     </div>
-    <div class="col-12 marbot15  greyt">
+    <div class="col-12 marbot15 boxshadow greyt">
     <div class="row justify-content-between">
       <div class="col-12 col-md-5">
         <div class="row ">

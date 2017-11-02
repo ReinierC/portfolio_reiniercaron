@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,600,700,700i');
 /*@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Permanent+Marker|Russo+One');*/
+
+
 .font-1 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 300;
+  /*font-family: 'Montserrat Alternates', sans-serif;*/
+  font-family: Arial, sans-serif;
+  font-weight: 400;
     /*font-family: 'Roboto Slab', serif;
     font-weight: 500!important;*/
 }
@@ -11,20 +14,36 @@
 }*/
 .font-3 {
     /*font-family: 'Roboto Slab', serif;*/
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 600important;
+    /*font-family: 'Montserrat Alternates', sans-serif;*/
+    font-family: Arial, sans-serif;
+    font-weight: 600!important;
     color: White;
 }
 body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;
     background: #490048; /* Old browsers */
-    background: -moz-linear-gradient(left, #490048 0%, #770065 22%, #890060 40%, #890060 60%, #770065 78%, #490048 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #490048 0%,#770065 22%,#890060 40%,#890060 60%,#770065 78%,#490048 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #490048 0%,#770065 22%,#890060 40%,#890060 60%,#770065 78%,#490048 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#490048', endColorstr='#490048',GradientType=1 ); /* IE6-9 */
+    /*background: -moz-linear-gradient(left, #490048 0%, #770065 22%, #890060 40%, #890060 60%, #770065 78%, #490048 100%); /* FF3.6-15 */
+    /*background: -webkit-linear-gradient(left, #490048 0%,#770065 22%,#890060 40%,#890060 60%,#770065 78%,#490048 100%); /* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(to right, #490048 0%,#770065 22%,#890060 40%,#890060 60%,#770065 78%,#490048 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#490048', endColorstr='#490048',GradientType=1 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#398235+0,8ab66b+20,c9de96+53,8ab66b+80,398235+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#398235+0,6c995a+20,87b77c+53,6c995a+80,398235+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#183a18+0,296629+20,4a8e56+40,4a8e56+60,296629+80,183a18+100 */
+  background: #183a18; /* Old browsers */
+  background: -moz-linear-gradient(left, #183a18 0%, #296629 20%, #4a8e56 40%, #4a8e56 60%, #296629 80%, #183a18 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #183a18 0%,#296629 20%,#4a8e56 40%,#4a8e56 60%,#296629 80%,#183a18 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #183a18 0%,#296629 20%,#4a8e56 40%,#4a8e56 60%,#296629 80%,#183a18 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#183a18', endColorstr='#183a18',GradientType=1 ); /* IE6-9 */
     background-repeat: repeat-y;
-    font-size: 1em;
+    font-size: 1.3em;*/
 }
+
+@media (max-width: 400px) {
+   body {
+     font-size: 1em;
+   }
+ }
+
 hr {
     border: 0;
     height: 3px;
@@ -44,6 +63,9 @@ a:visited {
 }
 a:hover {
     color: #62017a;
+}
+a:focus, a:hover {
+  text-decoration: none;
 }
 h1,
 h2,
@@ -153,9 +175,9 @@ margin-left: 2.6em;
         padding-top: 65px;
         margin-top: -65px;
     }
-    .xlhide {
-        display: none;
-    }
+    /*.xlhide {
+        display: none;  <!-- teleffon uit/aan bij groter scherm -->
+    }*/
 }
 /* END BANNER */
 
@@ -175,12 +197,22 @@ margin-left: 2.6em;
     padding-left: 0.1em;
     padding-right: 0.1em;
 }
+
 .navbar-toggler-icon {
     height: 1.2em;
     width: 1.2em;
 }
+@media (max-width: 300px) {
+  .navbar {
+      padding: .5rem .7rem;
+  }
+  .navbar-toggler-icon {
+    height: 1em!important;
+    width: 1em!important;
+  }
+}
 #navbar-nav {
-    margin-left: 2em;
+    margin-left: 1em;
     margin-right: 1em;
 }
 /*.anchor is used on links within the page so they allign under fixed-top navbar*/
@@ -240,81 +272,75 @@ h2.anchor {
 /* END NAVIGATION */
 
 /* ---===###  HERO SECTION  ###===--- */
-.Absolute-Center {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+
+p.heroText {
+  font-size: 1.6em;
+}
+i.heroText {
+  font-size: 1.6em;
+}
+#monkey{
+  max-height: 35vh;
+  background-position: center center;
 }
 
-#hero {
-    /*background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1509410185/reiniercaron-nl/gorilla.svg);*/
-    background-size: 100%;
-    position: relative;
-    height: 80vh;
-}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
 
-@media (min-width: 400px) and (max-width: 740px) and (orientation:landscape) {
-  #hero {
-      /*background-image: url(http://res.cloudinary.com/madhatter/image/upload/v1509410185/reiniercaron-nl/gorilla.svg);*/
-      background-size: 100%;
-      position: relative;
-      height: 60vh;
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/*
+Extra small devices (portrait phones, less than 544px)
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  p.heroText {
+    font-size: 1.6em;
   }
-  #hero-text {
-      font-size: 2em;
-      padding-top: 3vw;
+  i.heroText {
+    font-size: 1.6em;
   }
-
 }
 
-#hero-text {
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  p.heroText {
     font-size: 2em;
-    padding-top: 3vw;
-}
-
-.scale {
-    padding-top: 0.5vh!important;
-    font-size: 3.5vw!important;
   }
-  #monkey {
-    /*visibility: hidden;*/
-    width: auto;
-    height: 35vh;
+  i.heroText {
+    font-size: 2em;
   }
 }
 
-@media (min-width: 741px) and (max-width: 1000px) and (orientation:landscape) {
-  #hero-text {
-      font-size: 3em;
-      padding-top: 3vw;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  p.heroText {
+    font-size: 2.5em;
   }
-  .scale {
-      padding-top: 0.5vh!important;
-      font-size: 6vw!important;
+  i.heroText {
+    font-size: 2.5em;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    #hero-text {
-        font-size: 2.5em;
-        padding-top: 3vw;
-    }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  p.heroText {
+    font-size: 3em;
+  }
+  i.heroText {
+    font-size: 3em;
+  }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-    #hero-text {
-        font-size: 3em;
-        padding-top: 2.5vw;
-    }
-}
-@media all and (min-width: 1200px) {
-    #hero-text {
-        font-size: 3.5em;
-        padding-top: 1.5vw;
-    }
-}
+
 /*  END HERO SECTION */
 
 /* ---===###  ABOUT (Wie?) SECTION  ###===--- */
@@ -325,18 +351,41 @@ h2.anchor {
 .myskill p {
   font-size: 1.4em!important;
 }
+.bakkes{
+  max-width: 125px;
+  position: relative;
+-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+box-shadow: 1px 3px 3px rgba(0, 0, 0, .5);
+padding: 2px;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  .bakkes{
+    max-width: 150px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .bakkes{
+    max-width: 180px;
+  }
+}
 
 @include media-breakpoint-up(sm) {
   .myskill p {
     font-size: 1.5vw!important;
   }
+
 }
 
 @include media-breakpoint-up(md) {
   .myskill p {
     font-size: 0.5vw!important;
   }
-}
+
 }
 @include media-breakpoint-up(lg) {
   .myskill p {
@@ -351,6 +400,10 @@ h2.anchor {
 /* END ABOUT (Wie?) SECTION */
 
 /* ---===###  PORTFOLIO SECTION  ###===--- */
+.img-thumbnail {
+border-radius: 0;
+}
+
 img {
     image-rendering: optimizeSpeed;
     /*                     */
@@ -421,6 +474,10 @@ img {
 /* END PORTFOLIO SECTION */
 
 /* ---===###  CONTACT SECTION  ###===--- */
+#contact {
+font-size: .9em;
+}
+
 #gotocontact {
     margin-bottom: 30px;
 }
@@ -492,6 +549,50 @@ img {
     bottom: 0;
 }
 /*  END ALL THAT BOX SHADOW */
+
+/* ---===###  BOUNCE EFFECT  ###===--- */
+.bounce {
+ /*position: absolute;
+ bottom: 30px;
+ left: 50% ;*/
+ /*width: 60px;
+ height: 60px ;*/
+ /*margin-left:-30px;
+ border: 2px solid #fff;
+ -webkit-border-radius:50%;
+ -moz-border-radius:50%;
+ -ms-border-radius:50%;
+ border-radius:50%;*/
+ animation: bounce 3s infinite;
+ -webkit-animation: bounce 3s infinite;
+ -moz-animation: bounce 3s infinite;
+ -o-animation: bounce 3s infinite;
+}
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-30px);}
+ 60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-30px);}
+ 60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
+}
+
+/*  END BOUNCE EFFECT  */
 
 
 /* ---===###  SOCIAL ICONS (Color alterations)  ###===--- */
