@@ -20,20 +20,25 @@
     color: White;
 }
 body {
-    /*overflow-x: hidden;
-    background: #490048; /* Old browsers */
+    overflow-x: hidden;
+  /*  background: #490048; /* Old browsers */
     /*background: -moz-linear-gradient(left, #490048 0%, #770065 22%, #890060 40%, #890060 60%, #770065 78%, #490048 100%); /* FF3.6-15 */
     /*background: -webkit-linear-gradient(left, #490048 0%,#770065 22%,#890060 40%,#890060 60%,#770065 78%,#490048 100%); /* Chrome10-25,Safari5.1-6 */
     /*background: linear-gradient(to right, #490048 0%,#770065 22%,#890060 40%,#890060 60%,#770065 78%,#490048 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#490048', endColorstr='#490048',GradientType=1 ); /* IE6-9 */
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#398235+0,8ab66b+20,c9de96+53,8ab66b+80,398235+100 */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#398235+0,6c995a+20,87b77c+53,6c995a+80,398235+100 */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#183a18+0,296629+20,4a8e56+40,4a8e56+60,296629+80,183a18+100 */
-  background: #183a18; /* Old browsers */
-  background: -moz-linear-gradient(left, #183a18 0%, #296629 20%, #4a8e56 40%, #4a8e56 60%, #296629 80%, #183a18 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #183a18 0%,#296629 20%,#4a8e56 40%,#4a8e56 60%,#296629 80%,#183a18 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #183a18 0%,#296629 20%,#4a8e56 40%,#4a8e56 60%,#296629 80%,#183a18 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#183a18', endColorstr='#183a18',GradientType=1 ); /* IE6-9 */
+    /*background: #183a18; /* Old browsers */
+    /*background: -moz-linear-gradient(left, #183a18 0%, #296629 20%, #4a8e56 40%, #4a8e56 60%, #296629 80%, #183a18 100%); /* FF3.6-15 */
+    /*background: -webkit-linear-gradient(left, #183a18 0%,#296629 20%,#4a8e56 40%,#4a8e56 60%,#296629 80%,#183a18 100%); /* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(to right, #183a18 0%,#296629 20%,#4a8e56 40%,#4a8e56 60%,#296629 80%,#183a18 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#183a18', endColorstr='#183a18',GradientType=1 ); /* IE6-9 */
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003333+0,004444+10,005555+20,006666+30,007777+40,007777+60,006666+70,005555+80,004444+90,003333+100 */
+background: #003333; /* Old browsers */
+background: -moz-linear-gradient(left, #003333 0%, #004444 10%, #005555 20%, #006666 30%, #007777 40%, #007777 60%, #006666 70%, #005555 80%, #004444 90%, #003333 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #003333 0%,#004444 10%,#005555 20%,#006666 30%,#007777 40%,#007777 60%,#006666 70%,#005555 80%,#004444 90%,#003333 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #003333 0%,#004444 10%,#005555 20%,#006666 30%,#007777 40%,#007777 60%,#006666 70%,#005555 80%,#004444 90%,#003333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003333', endColorstr='#003333',GradientType=1 ); /* IE6-9 */
     background-repeat: repeat-y;
     font-size: 1.3em;*/
 }
@@ -56,13 +61,13 @@ hr {
 }*/
 
 a:link {
-    color: #440055;
+    color: #006666;
 }
 a:visited {
-    color: #8200ac;
+    color: #003333;
 }
 a:hover {
-    color: #62017a;
+    color: #007777;
 }
 a:focus, a:hover {
   text-decoration: none;
@@ -75,7 +80,7 @@ h5,
 h6 {
     font-size: 1.5em!important;
     margin: 0.8em 0.8em 0.8em 0.8em;
-    color: #660080;
+    color: #005555;
 }
 @media (min-width: 768px) {
     h1,
@@ -86,7 +91,6 @@ h6 {
     h6 {
         font-size: 2.3em!important;
         margin: 0.9em 0.9em 0.9em 0.9em;
-        color: #660080;
     }
 }
 @media (min-width: 992px) {
@@ -98,7 +102,6 @@ h6 {
     h6 {
         font-size: 3em!important;
         margin: 1em 1em 1em 1em;
-        color: #660080;
     }
 }
 
@@ -183,44 +186,59 @@ margin-left: 2.6em;
 
 /* ---===###  NAVIGATION  ###===--- */
 .navbar {
-    box-shadow: 1px 7px 8px -5px
+    box-shadow: 1px 7px 8px -5px;
+    padding: 0, 1rem, 0, 1rem;
 }
 /*makes the navbar lineup to toggle menu*/
 
 .navbar-header {
     margin-bottom: 1px;
+
 }
 .navbar-toggler {
     margin-top: 0.1em;
     padding-top: 0em;
-    padding-bottom: 0.1em;
     padding-left: 0.1em;
     padding-right: 0.1em;
+    font-size: 1.3em;
 }
 
 .navbar-toggler-icon {
     height: 1.2em;
     width: 1.2em;
 }
-@media (max-width: 300px) {
-  .navbar {
-      padding: .5rem .7rem;
-  }
+/*@media (max-width: 300px) {
+  .navbar {*/
+      /*padding: .5rem .7rem;*/
+      /*padding: 1rem;*/
+  /*}
   .navbar-toggler-icon {
     height: 1em!important;
     width: 1em!important;
   }
-}
+}*/
 #navbar-nav {
     margin-left: 1em;
     margin-right: 1em;
 }
+
+.navbar-inverse .navbar-toggler {
+    border-color: #292B2C;
+  }
+
+
+
 /*.anchor is used on links within the page so they allign under fixed-top navbar*/
 
 h2.anchor {
     padding-top: 60px;
     margin-top: -60px;
 }
+
+.nav {
+  padding-left: .5em;
+}
+
 /*Keeps the nav toggle from overlapping on small screens*/
 
 @media (max-width: 576px) {
@@ -242,10 +260,10 @@ h2.anchor {
 @media (max-width: 600px) {
     ul.social-button-nav li a i {
         color: #fff;
-        width: 24px;
-        height: 24px;
+        /*width: 24px;
+        height: 24px;*/
         border-radius: 30px;
-        font-size: 16px;
+        font-size: 1.3em;
         text-align: center;
         margin: 0px 0px 0px 12px;
         padding-top: 0.25em;
@@ -257,17 +275,30 @@ h2.anchor {
 @media (min-width: 601px) {
     ul.social-button-nav li a i {
         color: #fff;
-        width: 40px;
-        height: 40px;
+        /*width: 40px;
+        height: 40px;*/
         border-radius: 40px;
-        font-size: 28px;
+        font-size: 1.3em;
         text-align: center;
         margin: 0px 6px 0px 6px;
         padding-top: 0.2em;
-        padding-right: 0.01em;
+        padding-right: 0.2em;
         transition: all 0.3s ease-in-out;
     }
 }
+
+@media (min-width: 1700px) {
+#navbarCollapse {
+  margin-right: 3vw;
+}
+}
+/*.nav-wie {
+  padding-right: 0.5em;
+}
+.nav-cv {
+  padding-right: 0.5em;
+}*/
+
 
 /* END NAVIGATION */
 
@@ -277,11 +308,17 @@ p.heroText {
   font-size: 1.6em;
 }
 i.heroText {
-  font-size: 1.6em;
+  font-size: 2em;
 }
 #monkey{
   max-height: 35vh;
   background-position: center center;
+}
+@media (max-height: 500px)
+and (orientation : landscape)
+{
+#monkey {
+  display: none;
 }
 
 /*
@@ -302,12 +339,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 
 /* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {
+/*@media (min-width: 544px) {
   p.heroText {
     font-size: 1.6em;
   }
   i.heroText {
-    font-size: 1.6em;
+    font-size: 1.6em;*/
   }
 }
 
@@ -361,11 +398,11 @@ padding: 2px;
 }
 
 /* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {
+/*@media (min-width: 544px) {
   .bakkes{
     max-width: 150px;
   }
-}
+}*/
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
@@ -503,7 +540,7 @@ font-size: .9em;
 
 /* ---===###  FOOTER (Page) SECTION  ###===--- */
 .main-footer {
-    background-color: #440055;
+
 }
 /* END FOOTER (Page) SECTION */
 
@@ -596,7 +633,7 @@ font-size: .9em;
 
 
 /* ---===###  SOCIAL ICONS (Color alterations)  ###===--- */
-ul.social-button li a i {
+/*ul.social-button li a i {
     color: #fff;
     width: 24px;
     height: 24px;
@@ -608,40 +645,37 @@ ul.social-button li a i {
     padding-right: 0.03em;
     transition: all 0.3s ease-in-out;
     margin-bottom: 7px;
+}*/
+
+ul.social-button  li a i {
+    color: #005555!important;
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    /*font-size: 16px;*/
+    text-align: center;
+    margin: 0px 6px 0px 0px;
+    padding-top: 0.25em;
+    padding-right: 0.03em;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 7px;
+
 }
-.fa {
-    line-height: 1.4em;
+.greenawesome {
+  padding-left: 0px!important;
+  font-size: 1.4em;
 }
-.fa-linkedin {
-    background: #440055;
-}
-.fa-github {
-    background: #660080;
-}
-.icon-codepen {
-    background: #8800aa;
-}
-.fa-codepen {
-    background: #8800aa;
-}
-.fa-pinterest {
-    background: #aa00d4;
-}
-.fa-free-code-camp {
-    background: #cc00df;
-}
-.icon-freecodecamp {
-    background: #cc00df;
-}
+
 .fa-phone {
-    background: limegreen;
+  color: limegreen!important;
+  padding-left: .3em;
 }
-.social-button-nav li a i:hover {
+/*.social-button-nav li a i:hover {
     box-shadow: 0px 1px 9px 2px #888888;
 }
 .social-button li a i:hover {
-    box-shadow: 0px 1px 7px 2px #8800aa;
-}
+    box-shadow: 0px 1px 4px 2px #007777;
+}*/
 .nav-item .fa {
     color: #fff;
     font-size: 1.2em;
