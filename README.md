@@ -19,3 +19,6 @@
 ## _Used design applications:_
 * [Gimp](www.gimp.org)
 * [Inkscape](https://inkscape.org/en/)
+
+## Logo
+![Reinier Caron Logo](/img/rclogo_ss.svg)
