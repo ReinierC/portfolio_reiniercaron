@@ -40,12 +40,12 @@ background: -webkit-linear-gradient(left, #003333 0%,#004444 10%,#005555 20%,#00
 background: linear-gradient(to right, #003333 0%,#004444 10%,#005555 20%,#006666 30%,#007777 40%,#007777 60%,#006666 70%,#005555 80%,#004444 90%,#003333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003333', endColorstr='#003333',GradientType=1 ); /* IE6-9 */
     background-repeat: repeat-y;
-    font-size: 1.3em;*/
+    font-size: 1.3rem;
 }
 
 @media (max-width: 400px) {
    body {
-     font-size: 1em;
+     font-size: 1rem;
    }
  }
 
@@ -78,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 1.5em!important;
+    font-size: 1.8rem!important;
     margin: 0.8em 0.8em 0.8em 0.8em;
     color: #005555;
 }
@@ -89,7 +89,7 @@ h6 {
     h4,
     h5,
     h6 {
-        font-size: 2.3em!important;
+        font-size: 2rem!important;
         margin: 0.9em 0.9em 0.9em 0.9em;
     }
 }
@@ -100,7 +100,7 @@ h6 {
     h4,
     h5,
     h6 {
-        font-size: 3em!important;
+        font-size: 2.5rem!important;
         margin: 1em 1em 1em 1em;
     }
 }
@@ -112,6 +112,12 @@ h6 {
 margin-left: 2.6em;
 }
 /* TO BE SORTED */
+
+/* Remove dotted outline from all links */
+a {
+ outline: 0;
+}
+
 .whitebg {
     background-color: #fff;
 }
@@ -187,7 +193,7 @@ margin-left: 2.6em;
 /* ---===###  NAVIGATION  ###===--- */
 .navbar {
     box-shadow: 1px 7px 8px -5px;
-    padding: 0, 1rem, 0, 1rem;
+    padding: 0.2em 0.1em 0.1em 0.1em;
 }
 /*makes the navbar lineup to toggle menu*/
 
@@ -196,37 +202,23 @@ margin-left: 2.6em;
 
 }
 .navbar-toggler {
-    margin-top: 0.1em;
+    /*margin-top: 0.1em;
     padding-top: 0em;
     padding-left: 0.1em;
-    padding-right: 0.1em;
+    padding-right: 0.1em;*/
     font-size: 1.3em;
+    padding: 0px;
 }
 
 .navbar-toggler-icon {
     height: 1.2em;
     width: 1.2em;
 }
-/*@media (max-width: 300px) {
-  .navbar {*/
-      /*padding: .5rem .7rem;*/
-      /*padding: 1rem;*/
-  /*}
-  .navbar-toggler-icon {
-    height: 1em!important;
-    width: 1em!important;
-  }
-}*/
+
 #navbar-nav {
     margin-left: 1em;
     margin-right: 1em;
 }
-
-.navbar-inverse .navbar-toggler {
-    border-color: #292B2C;
-  }
-
-
 
 /*.anchor is used on links within the page so they allign under fixed-top navbar*/
 
@@ -236,7 +228,7 @@ h2.anchor {
 }
 
 .nav {
-  padding-left: .5em;
+  padding-left: 1.5em;
 }
 
 /*Keeps the nav toggle from overlapping on small screens*/
@@ -286,6 +278,9 @@ h2.anchor {
         transition: all 0.3s ease-in-out;
     }
 }
+#navbarCollapse {
+    margin-left: 1em;
+}
 
 @media (min-width: 1700px) {
 #navbarCollapse {
@@ -314,13 +309,25 @@ i.heroText {
   max-height: 35vh;
   background-position: center center;
 }
-@media (max-height: 500px)
+#nomonkey {
+  display: none;
+}
+@media (max-height: 550px)
 and (orientation : landscape)
 {
 #monkey {
   display: none;
 }
-
+#nomonkey {
+  display:inherit;
+}
+#nochevron {
+  display: none;
+}
+}
+.fa-angle-double-down {
+  padding: 3px;
+}
 /*
 ####################################################
 M E D I A  Q U E R I E S

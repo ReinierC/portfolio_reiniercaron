@@ -3,7 +3,7 @@ function htmlskillFunction() {
     element.classList.remove('text-danger', 'text-warning', 'text-info', 'text-success', 'text-primary', 'text-dark');
     element.classList.add("text-danger");
     document.getElementById("skillContent1").innerHTML = "HTML5";
-    document.getElementById("skillContent2").innerHTML = "HTML beheers ik voldoende. bekend met W3C";
+    document.getElementById("skillContent2").innerHTML = "HTML5 beheers ik voldoende; bekend met W3C richtlijnen";
 }
 
 function css3skillFunction() {
@@ -11,7 +11,7 @@ function css3skillFunction() {
     element.classList.remove('text-danger', 'text-warning', 'text-info', 'text-success', 'text-primary', 'text-dark');
     element.classList.add("text-info");
     document.getElementById("skillContent1").innerHTML = "CSS3";
-    document.getElementById("skillContent2").innerHTML = "Voldoende begrip van CSS3. Interesse in \"The Grid\". Een kennismaking staat in de planning.";
+    document.getElementById("skillContent2").innerHTML = "Flexbox, CSS-Grid, Media Queries, Frameworks, Viewport.";
 }
 
 function jsskillFunction() {
@@ -27,7 +27,7 @@ function phpskillFunction() {
     element.classList.remove('text-danger', 'text-warning', 'text-info', 'text-success', 'text-primary', 'text-dark');
     element.classList.add("text-success");
     document.getElementById("skillContent1").innerHTML = "PhP";
-    document.getElementById("skillContent2").innerHTML = "Concrete4 CMS draait op PhP en mySQL. Concrete kan ik handmatig installeren en uitbouwen. Mijn interesse gaat uit naar javaScript...";
+    document.getElementById("skillContent2").innerHTML = "Basis kennis van PHP. Gewerkt met Twig templating engine";
 }
 
 function designskillFunction() {
@@ -35,7 +35,7 @@ function designskillFunction() {
     element.classList.remove('text-danger', 'text-warning', 'text-info', 'text-success', 'text-primary', 'text-dark');
     element.classList.add("text-dark");
     document.getElementById("skillContent1").innerHTML = "Design";
-    document.getElementById("skillContent2").innerHTML = "The Gimp, Inkscape, Photoshop, Druk technieken, Schetsen, Prototyping";
+    document.getElementById("skillContent2").innerHTML = "The Gimp, Inkscape, Photoshop, Druktechnieken, Schetsen, Prototyping";
 }
 
 function moreskillFunction() {
@@ -43,5 +43,5 @@ function moreskillFunction() {
     element.classList.remove('text-danger', 'text-warning', 'text-info', 'text-success', 'text-primary', 'text-dark');
     element.classList.add("text-primary");
     document.getElementById("skillContent1").innerHTML = "Meer interessante kennis:";
-    document.getElementById("skillContent2").innerHTML = "Git, Scrum, ITIL, Bootstrap, Skeleton, CRM, VM, Didactiek";
+    document.getElementById("skillContent2").innerHTML = "Git, Scrum, Markdown, Yaml, ITIL, Bootstrap, Skeleton, Grav-CMS, CRM, VM, Didactiek";
 }
