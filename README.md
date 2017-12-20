@@ -1,5 +1,7 @@
 # Portfolio Reinier Caron
 
+Certain choices in the design/layout were made to overexaggerate techniques and as such show my awareness of them.
+
 ## _Used languages:_
 * __HTML5, CSS3__
   * [Bootstrap4](http://getbootstrap.com/)
